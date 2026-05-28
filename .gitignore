@@ -1,0 +1,17 @@
+node_modules
+dist
+/bin
+temp
+uni-module-dist
+etc
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+*.log
+.DS_Store
+.env*.local
+playground/.env*.local
+playground/.vite
+playground/dist
+playground/unpackage
+playground/node_modules

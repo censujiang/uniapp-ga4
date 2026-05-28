@@ -1,0 +1,2536 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.58.7",
+    "schemaVersion": 1011,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@jsx",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxRuntime",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxFrag",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxImportSource",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "ga4-uniapp!",
+  "docComment": "",
+  "name": "ga4-uniapp",
+  "preserveMemberOrder": false,
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "ga4-uniapp!",
+      "name": "",
+      "preserveMemberOrder": false,
+      "members": [
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!AutoTrackReason:type",
+          "docComment": "/**\n * Internal reason labels used when an automatic `page_view` is emitted.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type AutoTrackReason = "
+            },
+            {
+              "kind": "Content",
+              "text": "\"init\" | \"app-show\" | \"history\" | \"uni-navigation\""
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "AutoTrackReason",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!ConsentState:type",
+          "docComment": "/**\n * Consent mode values sent with each collect hit when configured.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ConsentState = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    ad_user_data?: \"GRANTED\" | \"DENIED\";\n    ad_personalization?: \"GRANTED\" | \"DENIED\";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ConsentState",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "ga4-uniapp!createUniAppGA4:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function createUniAppGA4(config: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CreateUniAppGA4Config",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "UniAppGA4",
+              "canonicalReference": "ga4-uniapp!UniAppGA4:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "config",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "createUniAppGA4"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config:interface",
+          "docComment": "/**\n * Configuration used by `createUniAppGA4`.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "interface CreateUniAppGA4Config "
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "CreateUniAppGA4Config",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#anonymizeIp:member",
+              "docComment": "/**\n * Send the GA-style anonymize IP flag.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "anonymizeIp?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "anonymizeIp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#appName:member",
+              "docComment": "/**\n * Optional app name sent as GA4 app metadata.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "appName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#appOrigin:member",
+              "docComment": "/**\n * App-side origin used to build GA4 `page_location` when the runtime has no browser `location.href`.\n *\n * Defaults to `https://uniapp.local`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appOrigin?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "appOrigin",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#appVersion:member",
+              "docComment": "/**\n * Optional app version sent as GA4 app metadata.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appVersion?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "appVersion",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoFileDownload:member",
+              "docComment": "/**\n * Track file downloads from H5 clicks and uni download/open-document APIs.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoFileDownload?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoFileDownload",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoForm:member",
+              "docComment": "/**\n * Track H5 form start and submit events.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoForm?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoForm",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoHistory:member",
+              "docComment": "/**\n * Track H5 `history.pushState`, `replaceState`, and `popstate` route changes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoHistory?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoHistory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoOutboundClick:member",
+              "docComment": "/**\n * Track outbound H5 anchor clicks before optionally opening the target URL.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoOutboundClick?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoOutboundClick",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoPageView:member",
+              "docComment": "/**\n * Send an initial `page_view` from `init()` and automatic page views from supported hooks.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoPageView?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoPageView",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoScroll:member",
+              "docComment": "/**\n * Track one GA4 `scroll` event after the page reaches the configured threshold.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoScroll?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoScroll",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoUniInterceptors:member",
+              "docComment": "/**\n * Register uni interceptors for navigation, download, and open-document APIs.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoUniInterceptors?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoUniInterceptors",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#autoViewSearchResults:member",
+              "docComment": "/**\n * Infer `view_search_results` from common search query keys on page views.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoViewSearchResults?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoViewSearchResults",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#batchIntervalMs:member",
+              "docComment": "/**\n * Optional debounce window for batching queued hits. `0` sends immediately.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "batchIntervalMs?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "batchIntervalMs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#collectEndpoint:member",
+              "docComment": "/**\n * Direct GA4 web collection endpoint.\n *\n * Defaults to the gtag.js endpoint `https://www.google-analytics.com/g/collect`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "collectEndpoint?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "collectEndpoint",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#debug:member",
+              "docComment": "/**\n * Enable console diagnostics for collect URLs, adapter failures, and automatic tracking.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "debug?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "debug",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#logger:member",
+              "docComment": "/**\n * Logger used when `debug` is enabled. Defaults to the runtime console.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Pick",
+                  "canonicalReference": "!Pick:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Console",
+                  "canonicalReference": "!Console:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", \"debug\" | \"info\" | \"warn\" | \"error\">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "logger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#measurementId:member",
+              "docComment": "/**\n * GA4 Measurement ID, for example `G-XXXXXXXXXX`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "measurementId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "measurementId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#requestAdapter:member",
+              "docComment": "/**\n * Custom transport for environments that need to override the default `uni.request` transport.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "requestAdapter?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(req: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UniGA4HttpRequest",
+                  "canonicalReference": "ga4-uniapp!UniGA4HttpRequest:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UniGA4HttpResponse",
+                  "canonicalReference": "ga4-uniapp!UniGA4HttpResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "requestAdapter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#respectDoNotTrack:member",
+              "docComment": "/**\n * Respect browser Do Not Track when available.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "respectDoNotTrack?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "respectDoNotTrack",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#respectGlobalPrivacyControl:member",
+              "docComment": "/**\n * Respect browser Global Privacy Control when available.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "respectGlobalPrivacyControl?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "respectGlobalPrivacyControl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#sessionTimeoutMs:member",
+              "docComment": "/**\n * Session timeout in milliseconds. Defaults to 30 minutes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "sessionTimeoutMs?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "sessionTimeoutMs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#storagePrefix:member",
+              "docComment": "/**\n * Storage key prefix for client ID, user ID, opt-out state, and session state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "storagePrefix?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "storagePrefix",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "ga4-uniapp!CreateUniAppGA4Config#userIdPersistence:member",
+              "docComment": "/**\n * Store `user_id` in memory only or persist it through uni storage.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "userIdPersistence?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"memory\" | \"storage\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "userIdPersistence",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!FileDownloadOptions:type",
+          "docComment": "/**\n * Parameters for a GA4 `file_download` event.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type FileDownloadOptions = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    url: string;\n    fileName?: string;\n    fileExtension?: string;\n    linkId?: string;\n    linkText?: string;\n    linkClasses?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "FileDownloadOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!FormOptions:type",
+          "docComment": "/**\n * Shared form metadata for `form_start` and `form_submit`.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type FormOptions = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    formId?: string;\n    formName?: string;\n    formDestination?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "FormOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!FormSubmitOptions:type",
+          "docComment": "/**\n * Parameters for a GA4 `form_submit` event.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type FormSubmitOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "FormOptions",
+              "canonicalReference": "ga4-uniapp!FormOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    formSubmitText?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "FormSubmitOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "ga4-uniapp!GA4_COLLECT_ENDPOINT:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "GA4_COLLECT_ENDPOINT = "
+            },
+            {
+              "kind": "Content",
+              "text": "\"https://www.google-analytics.com/g/collect\""
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "initializerTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "GA4_COLLECT_ENDPOINT",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!GA4ContextSnapshot:type",
+          "docComment": "/**\n * Read-only snapshot of runtime identity and session state.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type GA4ContextSnapshot = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    measurementId: string;\n    clientId: string;\n    userId?: string;\n    sessionId: number;\n    sessionNumber: number;\n    lastEngagementTime: number;\n    optOut: boolean;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "GA4ContextSnapshot",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!GA4EventName:type",
+          "docComment": "/**\n * Built-in gtag.js event names plus project-defined custom event names.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type GA4EventName = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Gtag.EventNames",
+              "canonicalReference": "!Gtag.EventNames:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | (string & {})"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "GA4EventName",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!GA4Params:type",
+          "docComment": "/**\n * Event parameters accepted by `event()` and the helper tracking methods.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type GA4Params = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [K in keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "GA4SerializableGtagParams",
+              "canonicalReference": "ga4-uniapp!GA4SerializableGtagParams:type"
+            },
+            {
+              "kind": "Content",
+              "text": "]?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Extract",
+              "canonicalReference": "!Extract:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "NonNullable",
+              "canonicalReference": "!NonNullable:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "GA4SerializableGtagParams",
+              "canonicalReference": "ga4-uniapp!GA4SerializableGtagParams:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[K]>, "
+            },
+            {
+              "kind": "Reference",
+              "text": "GA4Value",
+              "canonicalReference": "ga4-uniapp!GA4Value:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n} & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "GA4Value",
+              "canonicalReference": "ga4-uniapp!GA4Value:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "GA4Params",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 16
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!GA4SerializableGtagParams:type",
+          "docComment": "/**\n * gtag.js parameter surface that is serializable through this direct-collect client.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type GA4SerializableGtagParams = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Gtag.ConfigParams",
+              "canonicalReference": "!Gtag.ConfigParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Gtag.ControlParams",
+              "canonicalReference": "!Gtag.ControlParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Gtag.EventParams",
+              "canonicalReference": "!Gtag.EventParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "GA4SerializableGtagParams",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!GA4Value:type",
+          "docComment": "/**\n * Primitive values accepted by GA4 event and user-property parameters.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type GA4Value = "
+            },
+            {
+              "kind": "Content",
+              "text": "string | number | boolean | null | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "GA4Value",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!OutboundOptions:type",
+          "docComment": "/**\n * Parameters for an outbound-link click event.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type OutboundOptions = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    linkId?: string;\n    linkText?: string;\n    linkClasses?: string;\n    open?: boolean;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "OutboundOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!PageContext:type",
+          "docComment": "/**\n * Page information mapped to GA4 `dl`, `dr`, and `dt` URL parameters.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type PageContext = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    pageLocation: string;\n    pageReferrer: string;\n    pageTitle: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "PageContext",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "ga4-uniapp!UniAppGA4:interface",
+          "docComment": "/**\n * Runtime client returned by `createUniAppGA4`.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "interface UniAppGA4 "
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "UniAppGA4",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#appHide:member(1)",
+              "docComment": "/**\n * Hook for uni `onHide`; flushes pending hits.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appHide(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "appHide"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#appShow:member(1)",
+              "docComment": "/**\n * Hook for uni `onShow`; refreshes session state and may send a page view.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appShow(opts?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "opts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "appShow"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#createVideoTracker:member(1)",
+              "docComment": "/**\n * Create a video-event tracker for uni video component callbacks.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createVideoTracker(opts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "VideoTrackerOptions",
+                  "canonicalReference": "ga4-uniapp!VideoTrackerOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "VideoTracker",
+                  "canonicalReference": "ga4-uniapp!VideoTracker:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "opts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createVideoTracker"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#destroy:member(1)",
+              "docComment": "/**\n * Remove registered H5 listeners and stop pending flush timers.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "destroy(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "destroy"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#event:member(1)",
+              "docComment": "/**\n * Send any GA4 event name with typed gtag.js parameters.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "event(name: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GA4EventName",
+                  "canonicalReference": "ga4-uniapp!GA4EventName:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", params?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GA4Params",
+                  "canonicalReference": "ga4-uniapp!GA4Params:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "name",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "params",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "event"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#flush:member(1)",
+              "docComment": "/**\n * Flush queued hits immediately.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "flush(reason?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reason",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "flush"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#formStart:member(1)",
+              "docComment": "/**\n * Send GA4 `form_start`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "formStart(input: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FormOptions",
+                  "canonicalReference": "ga4-uniapp!FormOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "formStart"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#formSubmit:member(1)",
+              "docComment": "/**\n * Send GA4 `form_submit`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "formSubmit(input: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FormSubmitOptions",
+                  "canonicalReference": "ga4-uniapp!FormSubmitOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "formSubmit"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#getContext:member(1)",
+              "docComment": "/**\n * Return a read-only snapshot of identity, session, and opt-out state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getContext(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Readonly",
+                  "canonicalReference": "!Readonly:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GA4ContextSnapshot",
+                  "canonicalReference": "ga4-uniapp!GA4ContextSnapshot:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getContext"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#init:member(1)",
+              "docComment": "/**\n * Initialize storage, automatic collectors, and the first page view.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "init(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "init"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#onPageScroll:member(1)",
+              "docComment": "/**\n * Hook for page `onPageScroll`; sends the configured scroll event once per page.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onPageScroll(e: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        scrollTop: number;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "e",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "onPageScroll"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#openExternal:member(1)",
+              "docComment": "/**\n * Track an outbound click and optionally open the URL through uni APIs.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "openExternal(url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", opts?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OutboundOptions",
+                  "canonicalReference": "ga4-uniapp!OutboundOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "url",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "opts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "openExternal"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#optOut:member(1)",
+              "docComment": "/**\n * Enable or disable local opt-out. Disabled clients drop new events.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "optOut(disabled: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "disabled",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "optOut"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#pageHide:member(1)",
+              "docComment": "/**\n * Hook for page `onHide`; flushes pending hits.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pageHide(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "pageHide"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#pageShow:member(1)",
+              "docComment": "/**\n * Hook for page `onShow`; sends a page view when automatic page views are enabled.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pageShow(ctx?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PageContext",
+                  "canonicalReference": "ga4-uniapp!PageContext:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "ctx",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "pageShow"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#pageView:member(1)",
+              "docComment": "/**\n * Send a GA4 `page_view` with optional page context overrides.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pageView(ctx?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PageContext",
+                  "canonicalReference": "ga4-uniapp!PageContext:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "ctx",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "pageView"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#resetSession:member(1)",
+              "docComment": "/**\n * Start a new GA4 session and persist the updated session counter.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resetSession(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "resetSession"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#setConsent:member(1)",
+              "docComment": "/**\n * Set consent mode values for subsequent hits.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setConsent(consent: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ConsentState",
+                  "canonicalReference": "ga4-uniapp!ConsentState:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "consent",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "setConsent"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#setUserId:member(1)",
+              "docComment": "/**\n * Set or clear GA4 `user_id`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setUserId(userId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "userId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "setUserId"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#setUserProperties:member(1)",
+              "docComment": "/**\n * Set GA4 user properties to be sent with subsequent hits.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setUserProperties(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, string | number | boolean>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "setUserProperties"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#trackFileDownload:member(1)",
+              "docComment": "/**\n * Send GA4 `file_download`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "trackFileDownload(input: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FileDownloadOptions",
+                  "canonicalReference": "ga4-uniapp!FileDownloadOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "trackFileDownload"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "ga4-uniapp!UniAppGA4#viewSearchResults:member(1)",
+              "docComment": "/**\n * Send GA4 `view_search_results`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "viewSearchResults(searchTerm: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", extras?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GA4Params",
+                  "canonicalReference": "ga4-uniapp!GA4Params:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "searchTerm",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "extras",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "viewSearchResults"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!UniGA4HttpRequest:type",
+          "docComment": "/**\n * Normalized request passed to a custom transport adapter.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type UniGA4HttpRequest = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    url: string;\n    method: \"GET\" | \"POST\";\n    eventName: string;\n    params: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "UniGA4HttpRequest",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!UniGA4HttpResponse:type",
+          "docComment": "/**\n * Result returned by a custom transport adapter.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type UniGA4HttpResponse = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    ok: boolean;\n    statusCode?: number;\n    raw?: unknown;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "UniGA4HttpResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!VideoTracker:type",
+          "docComment": "/**\n * Imperative callbacks to wire uni-app video component lifecycle into GA4 events.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type VideoTracker = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    onPlay(): void;\n    onPause(): void;\n    onTimeUpdate(detail: {\n        currentTime: number;\n        duration: number;\n    }): void;\n    onEnded(): void;\n    onSeek?(detail: {\n        currentTime: number;\n        duration: number;\n    }): void;\n    onVisibilityChange?(visible: boolean): void;\n    onPageHide?(): void;\n    destroy(): void;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "VideoTracker",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "ga4-uniapp!VideoTrackerOptions:type",
+          "docComment": "/**\n * Metadata used to create a GA4 enhanced-measurement style video tracker.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type VideoTrackerOptions = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    videoId?: string;\n    title?: string;\n    url?: string;\n    provider?: string;\n    visible?: boolean;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "VideoTrackerOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}

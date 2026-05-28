@@ -1,0 +1,65 @@
+{
+  "name": "ga4-uniapp",
+  "type": "module",
+  "version": "0.1.3",
+  "packageManager": "bun@1.3.14",
+  "description": "GA4 direct-collect client for uni-app.",
+  "author": "censujiang",
+  "license": "MIT",
+  "homepage": "https://github.com/censujiang/ga4-uniapp",
+  "bugs": "https://github.com/censujiang/ga4-uniapp/issues",
+  "keywords": [
+    "uni-app",
+    "ga4",
+    "google-analytics",
+    "analytics"
+  ],
+  "sideEffects": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin",
+    "docs/public",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "ga4-uniapp": "bin/ga4-uniapp.mjs"
+  },
+  "workspaces": [
+    "playground"
+  ],
+  "dependencies": {
+    "@types/gtag.js": "^0.0.20",
+    "core-js": "^3.49.0"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "typecheck": "tsc --noEmit",
+    "docs": "bun run build && bun run docs:extract",
+    "docs:extract": "api-extractor run --local --verbose",
+    "dist:uni-module": "node ./scripts/build-uni-module-dist.mjs",
+    "mcp": "bun run build && node ./bin/ga4-uniapp.mjs mcp",
+    "playground:dev": "bun run --cwd playground dev:h5",
+    "playground:build": "bun run --cwd playground build:h5",
+    "playground:typecheck": "bun run --cwd playground type-check"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.31",
+    "@microsoft/api-extractor": "^7.58.7",
+    "@types/node": "^24.0.0",
+    "bestzip": "^3.0.1",
+    "typescript": "^5.9.0",
+    "unbuild": "^3.6.0"
+  }
+}
